@@ -3,70 +3,96 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.8">
-    <meta name="title" property="og:title" content="HOT HOUSE &#124; MONTREAL">
-    <meta property="og:site_name" content="HOT HOUSE &#124; MONTREAL">
+    <meta name="title" property="og:title" content="SOFT SKIN">
+    <meta property="og:site_name" content="SOFT SKIN">
     <meta property="og:url" content="http://www.hothouse.world/">
-    <meta name="description" property="og:description" content="Best thing a guy and a girl have ever done">
+    <meta name="description" property="og:description" content="SOFT SKIN">
     <meta property="og:image" content="https://www.hothouse.world/images/thumbnail.png">
-    <title>HOT HOUSE</title>
+    <title>SOFT SKIN</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="https://www.hothouse.world/images/icons/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   </head>
   <body>
 
-    <div class="instagram-button">
-      <a href="https://www.instagram.com/girlsinthehothouse/">
-        <img src="../images/icons/instagram.svg" alt="Hot House Instagram">
-      </a>
-    </div>
-
-    <div class="softlab-button">
-      <a href="https://www.instagram.com/soft__lab/">
-        <img src="../images/icons/loxodrome.png" alt="SoftLab Instagram">
-      </a>
-    </div>
-
-    <header>
-      <h1><a href="/">HOT HOUSE</a></h1>
-    </header>
-
-    <div class="hotvid-row">
-      <a href="https://www.instagram.com/girlsinthehothouse/">
-        <div class="hotvid-gif" id="hotvid-container-1"></div>
-      </a>
-      <a href="https://www.instagram.com/nutritionalyeast/">
-        <div class="hotvid-gif" id="hotvid-container-2"></div>
-      </a>
+    <div class="video-container">
+      <video autoplay muted loop playsinline>
+        <source src="img/background-video.mp4" type="video/mp4">
+      </video>
     </div>
 
     <main>
-      <h1><a href="listen">LISTEN</a></h1>
-      <h1><a href="https://youtu.be/pKVPFH6TPmY?si=9XXMb-xq6Et13XYF">WATCH</a></h1>
-      <h1><a href="gallery">GALLERY</a></h1>
-      <h1><a href="events">EVENTS</a></h1>
-      <h1><a href="shop">SHOP</a></h1>
-      <h1><a href="contact">CONTACT</a></h1>
+      <section class="one">
+        <div class="hover-card">
+          <a href="about" class="warp">
+            <h2>ABOUT</h2>
+          </a>
+        </div>
+        <div class="hover-card">
+          <a href="listen" class="warp">
+            <h2>LISTEN</h2>
+          </a>
+        </div>
+        <div class="hover-card">
+          <a href="watch" class="warp">
+            <h2>WATCH</h2>
+          </a>
+        </div>
+        <div class="hover-card">
+          <a href="contact" class="warp">
+            <h2>CONTACT</h2>
+          </a>
+        </div>
+      </section>
+
+      <section class="two">
+        <img src="img/white.png" alt="">
+        <h1>SOFT SKIN</h1>
+
+        <form action="email_signup.php" method="post">
+          <label for="email">
+            <h3>Sign up for our newsletter</h3>
+          </label>
+          <input type="email" id="email" name="email" required placeholder="Enter e-mail address">
+          <button type="submit">Sign up</button>
+        </form>
+
+        <!-- <form action="process_signup.php" method="post">
+          <div id="mc_embed_signup_scroll">
+            <div class="mc-field-group remove flexCenter">
+              <label for="mce-EMAIL">
+                <h2>Sign up for our newsletter</h2>
+              </label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter e-mail adress" autocomplete="off">
+            </div>
+
+            <div id="mce-responses" class="clear">
+              <div class="response remove" id="mce-error-response" style="display: none;">
+                <h2 id="error-msg">Something went wrong... try again.</h2>
+              </div>
+              <div class="response" id="mce-success-response" style="display: none;">
+                <h2>We'll let you know when something is happening!</h2>
+              </div>
+            </div>
+
+            <div class="clear remove flexCenter">
+              <input type="submit" value="Sign up" name="sign up" id="mc-embedded-subscribe" class="button">
+            </div>
+          </div>
+        </form> -->
+
+        <img src="img/white.png" alt="">
+      </section>
+      <section class="three">
+        <h1>null</h1>
+        <h1>null</h1>
+        <h1>null</h1>
+        <h1>null</h1>
+      </section>
+
     </main>
 
-    <div class="hotvid-row">
-      <a href="https://www.instagram.com/girlsinthehothouse/">
-        <div class="hotvid-gif" id="hotvid-container-3"></div>
-      </a>
-      <a href="https://www.instagram.com/kk.jpeggg/">
-        <div class="hotvid-gif" id="hotvid-container-4"></div>
-      </a>
-    </div>
-    
-    <footer>
-      <h2>
-        <a href="https://www.koshercityplus.com/hot-house-tomatoes.html">
-          &#127968; &#128293;
-        </a>
-      </h2>
-    </footer>
-
-    <script src="js/randomgif.js"></script>
+    <script src="js/hover.js"></script>
 
   </body>
 </html>
