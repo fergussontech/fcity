@@ -1,17 +1,25 @@
 .content {
-    margin: 2rem auto;
-    max-width: 25rem; 
-  }
+    margin: 16px auto;
+    width: 450px;
+}
+
+.content h3 {
+    margin: 24px;
+}
+
+.artwork {
+    width: 100%;
+}
   
 .link {
     width: 100%;
+    margin-top: 16px;
+    padding: 10px;
     border: 1px solid white;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border-radius: 0.3rem;
 }
   
 .link:hover {
@@ -20,20 +28,8 @@
 }
   
 .link img {
-    width: 2.5rem;
-    margin-right: 1rem;
-}
-  
-.artwork {
-    width: 500px;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
-  
-.artwork img {
-    width: 100%;
+    width: 36px;
+    margin-right: 16px;
 }
   
 .soundcloud-player {
@@ -43,10 +39,4 @@
   
 .soundcloud-player iframe {
     margin-bottom: 0.6rem;
-}
-
-@media only screen and (max-width: 1441px) {
-    .artwork {
-      width: 400px;
-    }
 }

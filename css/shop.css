@@ -1,0 +1,86 @@
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.item-page-container {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.flex-item {
+    flex: 1;
+    margin: 15px;
+    text-align: left;
+    padding: 0 12px 0 12px;
+}
+  
+.shop-photo, .item-photo{
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.item-text {
+    margin: 16px 0;
+}
+
+.product-text {
+    margin-bottom: 24px;
+}
+  
+#item1 { background-image: url('../images/shop/dildo-default.jpg'); }
+#item2 { background-image: url('../images/shop/rosary-default.jpg'); }
+#item3 { background-image: url('../images/shop/shirt-default.jpg'); }
+#item4 { background-image: url('../images/shop/vinyl-default.jpg'); }
+#item5 { background-image: url('../images/shop/tape-default.jpg'); }
+#item6 { background-image: url('../images/shop/download-default.jpg'); }
+
+#item1:hover { background-image: url('../images/shop/dildo-hover.jpg'); }
+#item2:hover { background-image: url('../images/shop/rosary-hover.jpg'); }
+#item3:hover { background-image: url('../images/shop/shirt-hover.jpg'); }
+#item4:hover { background-image: url('../images/shop/vinyl-hover.jpg'); }
+#item5:hover { background-image: url('../images/shop/tape-hover.jpg'); }
+#item6:hover { background-image: url('../images/shop/download-hover.jpg'); }
+
+
+@media only screen and (max-width: 1200px) {
+    .item-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 760px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .item-container {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .item-page-container {
+        flex-direction: column;
+        max-width: 450px;
+    }
+}
